@@ -12,9 +12,10 @@
 
     <default remote="openembedded" revision="krogoth" />
     
-    <project name="oe-core"          path="oe-core"/>
-    <project name="meta-oe"          path="meta-oe"/>
-    <project name="bitbake"          path="bitbake"          revision="1.30"/>
-    <project name="meta-xilinx"      path="meta-xilinx"      revision="krogoth" remote="Xilinx"/>
-    <project name="meta-redhawk-sdr" path="meta-redhawk-sdr" revision="krogoth" remote="GeonTech"/>
+    <project name="openembedded-core" path="oe-core"/>
+    <project name="meta-openembedded" path="meta-oe"/>
+    <project name="bitbake"           path="bitbake"          revision="1.30"/>
+    <project name="meta-xilinx"       path="meta-xilinx"      revision="krogoth" remote="Xilinx"/>
+    <project name="meta-redhawk-sdr"  path="meta-redhawk-sdr" revision="krogoth" remote="GeonTech"/>
 </manifest>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+    <remote name="openembedded"
+        fetch="git://github.com/openembedded" />
+
+    <remote name="Xilinx"
+        fetch="git://github.com/Xilinx" />
+    
+    <remote name="GeonTech"
+        fetch="git://github.com/GeonTech" />
+
+    <default remote="openembedded" revision="krogoth" />
+    
+    <project name="oe-core"          path="oe-core"/>
+    <project name="meta-oe"          path="meta-oe"/>
+    <project name="bitbake"          path="bitbake"          revision="1.30"/>
+    <project name="meta-xilinx"      path="meta-xilinx"      revision="krogoth" remote="Xilinx"/>
+    <project name="meta-redhawk-sdr" path="meta-redhawk-sdr" revision="krogoth" remote="GeonTech"/>
+</manifest>

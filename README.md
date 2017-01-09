@@ -68,5 +68,11 @@ The purpose of this repository is to make establishing an OpenEmbedded (OE) buil
 
         $ export MACHINE="qemuarm"
         $ bitbake redhawk-gpp-image
+    
+    Optionally, we have included a script: `meta-redhawk-sdr/contrib/scripts/build-image.sh` that can produce an SD card image.  You provide `MACHINE` and `BUILD_IMAGE` environment variables, and it produces an `images/MACHINE/sd-image-BUILD_IMAGE.direct` file for writing to an SD Card image.  Link the script into your `build` folder, set the variables, and run it.
 
+6.  Run QEMU (optional)
+    
+    If your build `MACHINE` was `qemuarm`, you can use `runqemu qemuarm` to test the system out (with obvious limitations, of course).  Once it is running, you may need to secure-shell as `root` into the IP address it provided: `ssh root@<IP ADDRESS>`.
+    
 

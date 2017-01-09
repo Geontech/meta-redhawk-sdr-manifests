@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-    <remote name="openembedded"
-        fetch="git://github.com/openembedded" />
-
-    <remote name="Xilinx"
-        fetch="git://github.com/Xilinx" />
+    <remote name="openembedded" fetch="git://github.com/openembedded" />
+    <remote name="GeonTech" fetch="git://github.com/GeonTech" />
+    <remote name="yocto" fetch="git://git.yoctoproject.org">
     
-    <remote name="GeonTech"
-        fetch="git://github.com/GeonTech" />
-
-    <default remote="openembedded" revision="krogoth" />
-    
-    <project name="openembedded-core" path="oe-core"/>
-    <project name="meta-openembedded" path="meta-oe"/>
-    <project name="bitbake"           path="bitbake"          revision="1.30"/>
-    <project name="meta-xilinx"       path="meta-xilinx"      revision="krogoth" remote="Xilinx"/>
-    <project name="meta-redhawk-sdr"  path="meta-redhawk-sdr" revision="krogoth" remote="GeonTech"/>
+    <project name="meta-openembedded" path="poky/meta-openembedded" revision="krogoth" remote="openembedded" />
+    <project name="meta-redhawk-sdr"  path="poky/meta-redhawk-sdr" revision="krogoth" remote="GeonTech" />
+    <project name="poky" remote="yocto" revision="krogoth"/>
 </manifest>
 

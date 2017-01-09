@@ -1,6 +1,6 @@
 # Meta-REDHAWK-SDR -based Manifests for OpenEmbedded Development
 
-The purpose of this repository is to make establishing an OpenEmbedded (OE) build environment easier.  These instructions have been adapted from the Ettus Research e300-manifest that was used to build the original REDHAWK on an E310 image found at [Geon Technologies](http://www.geontech.com).  Most of the adaptations to the instructions were targeted at making them more generic.
+The purpose of this repository is to make establishing an OpenEmbedded (OE) build environment easier.  These instructions have been adapted from the Ettus Research e300-manifest that was used to build the original REDHAWK on an E310 image found at [Geon Technologies](http://www.geontech.com), the instructions of which can be found in several other repos manifests (Gumstix, etc.) as well.  Most of the adaptations to the instructions were targeted at making them more generic.
 
 ## Getting Started
 
@@ -40,7 +40,7 @@ The purpose of this repository is to make establishing an OpenEmbedded (OE) buil
     
     > **NOTE:** The `-m` option lets you specify a different manifest file other than the `default.xml`.
 
-    To learn more about repo, here is the [documentation](http://source.android.com/source/version-control.html).
+    To learn more about the repo manifest format, here is the [documentation](https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.txt).
 
 3.  Fetch all the repositories.
 
@@ -51,7 +51,7 @@ The purpose of this repository is to make establishing an OpenEmbedded (OE) buil
 4.  Initialize the OpenEmbedded Environment. This assumes you created the oe-core directory
     in your home directory.
 
-        $ TEMPLATECONF=`pwd`/meta-sdr/conf source ./oe-core/oe-init-build-env ./build ./bitbake
+        $ TEMPLATECONF=`pwd`/poky/meta-redhawk-sdr/conf source ./poky/oe-init-build-env ./build ./poky/bitbake
 
 
     This copies default configuration information into the build/conf*

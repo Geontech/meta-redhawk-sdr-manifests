@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
+	<default revison="pyro"/>
     <remote name="openembedded" fetch="git://github.com/openembedded" />
-    <remote name="GeonTech" fetch="git://github.com/GeonTech" />
     <remote name="yocto" fetch="git://git.yoctoproject.org" />
+    <remote name="GeonTech" fetch="." />
     
-    <project name="meta-openembedded" path="poky/meta-openembedded" revision="krogoth" remote="openembedded" />
-    <project name="meta-redhawk-sdr"  path="poky/meta-redhawk-sdr" revision="krogoth" remote="GeonTech" />
-    <project name="poky" remote="yocto" revision="krogoth"/>
+    <project name="poky" remote="yocto"/>
+    <project name="meta-openembedded" path="poky/meta-openembedded" remote="openembedded" />
+    <project name="meta-redhawk-sdr"  path="poky/meta-redhawk-sdr" remote="GeonTech" />
 </manifest>
 

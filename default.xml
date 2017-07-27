@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-	<default revison="pyro"/>
+    <default revision="pyro"/>
     <remote name="openembedded" fetch="git://github.com/openembedded" />
     <remote name="yocto" fetch="git://git.yoctoproject.org" />
     <remote name="GeonTech" fetch="." />

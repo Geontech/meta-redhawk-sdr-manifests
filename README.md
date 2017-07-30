@@ -73,7 +73,7 @@ The purpose of this repository is to make establishing an OpenEmbedded (OE) buil
 
 6.  Run QEMU (optional)
     
-    If your build `MACHINE` was `qemuarm64`, you can use `runqemu qemuarm64` to test the system out (with obvious limitations, of course).  The above referenced `redhawk-test-image` includes the `init.d` scripts for the Omni services, a Domain, and the GPP node with all available components and softpkgs installed, making it a turn-key stand-alone REDHAWK system.  
+    If your build `MACHINE` was `qemuarm64`, you can use `runqemu qemuarm64 tmp/deploy/images/qemuarm64` to test the system out (with obvious limitations, of course).  The above referenced `redhawk-test-image` includes the `init.d` scripts for the Omni services, a Domain, and the GPP node with all available components and softpkgs installed, making it a turn-key stand-alone REDHAWK system.
     
     > Note: Once it is running, you may need to secure-shell as `root` into the IP address it provided: `ssh root@<IP ADDRESS>`.
     

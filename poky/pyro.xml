@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote  name="yocto"        fetch="git://git.yoctoproject.org"    revision="refs/tags/yocto-2.3.1"/>
+    <remote  name="openembedded" fetch="git://github.com/openembedded" revision="pyro"/>
+    <project name="poky"              remote="yocto" />
+    <project name="meta-openembedded" remote="openembedded" path="poky/meta-openembedded"  />
+</manifest>

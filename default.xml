@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <manifest>
-    <default revision="pyro"/>
-    <remote name="openembedded" fetch="git://github.com/openembedded" />
-    <remote name="yocto" fetch="git://git.yoctoproject.org" />
-    <remote name="GeonTech" fetch="." />
-    
-    <project name="poky" remote="yocto"/>
-    <project name="meta-openembedded" path="poky/meta-openembedded" remote="openembedded" />
-    <project name="meta-redhawk-sdr"  path="poky/meta-redhawk-sdr" remote="GeonTech" />
+    <include name="redhawk-sdr-latest.xml"/>
 </manifest>
-

@@ -12,11 +12,6 @@ Each of these base manifests setup a build environment that includes resembles s
 
 The typical filesystem layout is in a path, `poky`:
 
-Jethro (ls -l)
-```
-```
-
-Fido (ls -l)
 ```
 bitbake
 documentation
@@ -33,40 +28,3 @@ README
 README.hardware
 scripts
 ```
-
-Dizzy (ls -l)
-```
-bitbake
-documentation
-LICENSE
-meta
-meta-openembedded
-meta-selftest
-meta-skeleton
-meta-yocto
-meta-yocto-bsp
-oe-init-build-env
-oe-init-build-env-memres
-README
-README.hardware
-scripts
-```
-
-Daisy (ls -l)
-
-```
-bitbake
-documentation
-LICENSE
-meta
-meta-openembedded
-meta-selftest
-meta-skeleton
-meta-yocto
-meta-yocto-bsp
-oe-init-build-env
-oe-init-build-env-memres
-README
-README.hardware
-scripts
-````

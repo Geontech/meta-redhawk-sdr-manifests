@@ -21,15 +21,12 @@ POKYDIR=poky
 # Initialize the OpenEmbedded environment (will change into build directory)
 TEMPLATECONF=`pwd`/${POKYDIR}/meta-redhawk-sdr/conf source ./${POKYDIR}/oe-init-build-env ./build ./${POKYDIR}/bitbake
 
-# Link the build_image script from meta-redhawk-sdr into the build directory
-ln -s ../meta-redhawk-sdr/contrib/scripts/build-image.sh ./build-image.sh
-
 # Set the environment variables required for building the image
-export MACHINE=zedboard-zynq7
-export BUILD_IMAGE=redhawk-base-image
+export MACHINE=qemuarm64
+export BUILD_IMAGE=redhawk-test-image
 
 # Done...
-echo "Use: 'bitbake redhawk-base-image' to kick off a build."
+echo "Use: 'bitbake redhawk-test-image' to kick off a build."
 echo "Optional: set the MACHINE and BUILD_IMAGE variables appropriately and use 'build-image.sh' to generate a two-partition SD card image"
 echo "If you ever need to re-establish your environment later, from the top-level project directory:"
 echo "  source ./${POKYDIR}/oe-init-build-env ./build ./${POKYDIR}/bitbake"

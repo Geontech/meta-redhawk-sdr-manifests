@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <include name="redhawk-sdr-latest.xml"/>
+    <include name="redhawk-sdr-release.xml"/>
 </manifest>

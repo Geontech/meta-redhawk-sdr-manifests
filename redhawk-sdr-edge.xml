@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote  name="geontech" fetch="." />
+    <project
+        name="meta-redhawk-sdr"
+        remote="geontech"
+        path="poky/meta-redhawk-sdr" 
+        revision="poky">
+        <!-- Link in the build-image.sh helper script -->
+        <linkfile src="contrib/scripts/build-image.sh" dest="build/rh-build-image.sh"/>
+    </project>
+    <!-- Latest supported branch release -->
+    <include name="poky/pyro.xml" />
+</manifest>

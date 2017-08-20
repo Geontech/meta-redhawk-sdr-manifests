@@ -2,7 +2,7 @@
 <manifest>
     <remote  name="yocto"        fetch="git://git.yoctoproject.org" />
     <remote  name="openembedded" fetch="git://github.com/openembedded" />
-    <project name="poky"              remote="yocto"        revision="refs/tags/yocto-2.1.3">
+    <project name="poky"              remote="yocto"        revision="refs/tags/yocto-2.1.3"/>
     <project name="meta-openembedded" remote="openembedded" revision="krogoth"
              path="poky/meta-openembedded" />
 </manifest>

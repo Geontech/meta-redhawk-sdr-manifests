@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote  name="xilinx"       fetch="git://github.com/Xilinx" />
+    <remote  name="ettus"        fetch="git://github.com/EttusResearch" />
+    <remote  name="balister"     fetch="git://github.com/balister" />
+
+    <project name="meta-xilinx" remote="xilinx"   revision="13779b9254bab450875a60ed8f21edd0e8876a71"
+             path="poky/meta-xilinx" />
+    <project name="meta-ettus"  remote="ettus"    revision="70863e87bbec2c03c8fba4e3d7379670ac5f4afb"
+             path="poky/meta-ettus" />
+    <project name="meta-sdr"    remote="balister" revision="75e79383ce69a4de0989a5c655e0f062e4b12335"
+             path="poky/meta-sdr" />
+
+    <!-- Yocto release -->
+    <include name="poky/fido.xml" />
+</manifest>

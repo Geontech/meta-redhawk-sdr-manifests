@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- REDHAWK SDR (latest tagged release) with E310's dependencies -->
+    <include name="redhawk-sdr.xml" />
+    <include name="targets/e310.xml" />
+</manifest>
